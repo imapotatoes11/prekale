@@ -38,7 +38,8 @@ extension Date {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MMMM d"
         let day = Calendar.current.component(.day, from: self)
-        let dayString = "\(day)\(day.daySuffix)"
+//        let dayString = "\(day)\(day.daySuffix)"
+        let dayString = "\(day.daySuffix)"
         let monthAndDay = dateFormatter.string(from: self)
         dateFormatter.dateFormat = "yyyy"
         let year = dateFormatter.string(from: self)
@@ -174,6 +175,7 @@ struct ContentView: View {
         print("ContentView initialized")
     }
     var body: some View {
+        // TODO: https://chatgpt.com/share/021afbc9-86c3-4306-89b0-2c5f754af43e
         VStack {
             GroupBox {
                 Text(Date().formattedString())
