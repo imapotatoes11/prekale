@@ -75,6 +75,6 @@ struct prekaleApp: App {
         }
 }
 
-#Preview {
-    SplashScreenView()
-}
+//#Preview {
+//    SplashScreenView()
+//}
