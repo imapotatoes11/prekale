@@ -33,7 +33,7 @@ struct MacOSProgressIndicator: View {
                 isAnimating = true
             }
         }
-        .padding(20)  // Adjust padding as needed
+//        .padding(20)  // Adjust padding as needed
     }
 }
 
